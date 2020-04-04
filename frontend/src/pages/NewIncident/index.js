@@ -48,7 +48,7 @@ function NewIncident(){
           <h1>Cadastro novo caso</h1>
           <p>Descreva o caso detalhadamente para encontrar um heroi para resolver isso</p>
          
-          <Link className="back-link" to="/">
+          <Link className="back-link" to="/profile">
             <FiArrowLeft size={16} color="#E02041"/> 
             Voltar para home
           </Link>

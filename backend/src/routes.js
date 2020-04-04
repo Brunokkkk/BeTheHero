@@ -21,11 +21,7 @@ routes.post('/ongs', celebrate({
   })
 }), OngController.create);
 
-routes.post('/session', celebrate({
-  [Segments.HEADERS]: Joi.object({
-    authorization: Joi.string().required(),
-  }).unknown(), 
-}), SessionController.create);
+routes.post('/session', SessionController.create);
 
 routes.get('/profile', celebrate({
   [Segments.QUERY]: Joi.object().keys({
